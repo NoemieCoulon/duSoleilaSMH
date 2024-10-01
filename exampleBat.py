@@ -9,6 +9,7 @@ for dirpath, dirnames, filenames in os.walk("."):
       if filename.endswith(".ini"):
         ini_file.append(filename)
 dict_batiment = {}
+
 for file in ini_file:
     config.read(file)
     name = config['Fixed']['nom']

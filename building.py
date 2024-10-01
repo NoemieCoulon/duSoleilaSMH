@@ -2,10 +2,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-class Batiment:
-    def __init__(self, name, coordinates, prod_possible):
+class Building:
+    def __init__(self, name, coordinates, year_consumption, prod_possible):
         self.name = name
         self.coordinates = coordinates
+        self.year_consumption = year_consumption
         self.prod_possible = prod_possible
 
     def conso(self):
@@ -31,14 +32,13 @@ class Batiment:
         print(f"Coordonnées: {self.coordinates}")
         print(f"Production possible? : {self.prod_possible}")
 
-class BatimentProducteur(Batiment):
+class ProdBuilding(Building):
 
-    def __init__(self, name, coordinates):
-        super().__init__(name, coordinates, True)
+    def __init__(self, name, coordinates, year_consumption):
+        super().__init__(name, coordinates, year_consumption, True)
 
-    def __set_surface__(self, roof_m2, pv_m2):
+    def __set_surface__(self, roof_m2):
         self.roof_m2 = roof_m2
-        self.pv_m2 = pv_m2
 
     def production(self):
         return [10]*7

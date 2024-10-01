@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5a38c39c98c9c51577616f11ed6367d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f5a38c39c98c9c51577616f11ed6367d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f5a38c39c98c9c51577616f11ed6367d = L.map(
+                "map_f5a38c39c98c9c51577616f11ed6367d",
+                {
+                    center: [45.18, 5.76],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_135d52a6648482420e6ba8e04a007595 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_135d52a6648482420e6ba8e04a007595.addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+            var marker_d68da1b6288fb42657bc021ac70d786f = L.marker(
+                [45.164898, 5.751442],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_dfbe91fd390dc077ff8140ba12a0216f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c31f8b198c0e3cf8a61f3c4b4c38431 = $(`<div id="html_5c31f8b198c0e3cf8a61f3c4b4c38431" style="width: 100.0%; height: 100.0%;">BIBLIOTHEQUE ANDRE MALRAUX  Conso Annuelle: 0.0</div>`)[0];
+                popup_dfbe91fd390dc077ff8140ba12a0216f.setContent(html_5c31f8b198c0e3cf8a61f3c4b4c38431);
+            
+        
+
+        marker_d68da1b6288fb42657bc021ac70d786f.bindPopup(popup_dfbe91fd390dc077ff8140ba12a0216f)
+        ;
+
+        
+    
+    
+            var marker_115f1837babc17bab314c4ff93689324 = L.marker(
+                [45.179814, 5.759394],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_5cbf1b0d769ab8a8d87085cef85c501d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb42ad8645afa4cbb4eaf06ae432bbbf = $(`<div id="html_bb42ad8645afa4cbb4eaf06ae432bbbf" style="width: 100.0%; height: 100.0%;">BIBLIOTHEQUE PAUL LANGEVIN  Conso Annuelle: 0.0</div>`)[0];
+                popup_5cbf1b0d769ab8a8d87085cef85c501d.setContent(html_bb42ad8645afa4cbb4eaf06ae432bbbf);
+            
+        
+
+        marker_115f1837babc17bab314c4ff93689324.bindPopup(popup_5cbf1b0d769ab8a8d87085cef85c501d)
+        ;
+
+        
+    
+    
+            var marker_c2c527c7f1b1ceb937ebd8da8b3be861 = L.marker(
+                [45.184185, 5.751225],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_0445dadbd6807ccd0d567fb88778f540 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d37184cbf3a2ff0be112b46b59d0efec = $(`<div id="html_d37184cbf3a2ff0be112b46b59d0efec" style="width: 100.0%; height: 100.0%;">CENTRE MUSICAL ERIK SATIE  Conso Annuelle: 0.0</div>`)[0];
+                popup_0445dadbd6807ccd0d567fb88778f540.setContent(html_d37184cbf3a2ff0be112b46b59d0efec);
+            
+        
+
+        marker_c2c527c7f1b1ceb937ebd8da8b3be861.bindPopup(popup_0445dadbd6807ccd0d567fb88778f540)
+        ;
+
+        
+    
+    
+            var marker_052d897c3914edbe22873a6409729ff7 = L.marker(
+                [45.172261, 5.756201],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_4ff4409ebdb6081f0e8a5c5a0011ab7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_128d3c1f49be23f4fa0805232421e518 = $(`<div id="html_128d3c1f49be23f4fa0805232421e518" style="width: 100.0%; height: 100.0%;">CRECHE JEANNE LABOURBE  Conso Annuelle: 0.0</div>`)[0];
+                popup_4ff4409ebdb6081f0e8a5c5a0011ab7c.setContent(html_128d3c1f49be23f4fa0805232421e518);
+            
+        
+
+        marker_052d897c3914edbe22873a6409729ff7.bindPopup(popup_4ff4409ebdb6081f0e8a5c5a0011ab7c)
+        ;
+
+        
+    
+    
+            var marker_056d804cbc33d5ccf81a3db1fa5777e0 = L.marker(
+                [45.164998, 5.76793],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_b05058debeac2a833358d2f8d837a664 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a4264c7661aa91a604c07cefffda7f6 = $(`<div id="html_9a4264c7661aa91a604c07cefffda7f6" style="width: 100.0%; height: 100.0%;">ESPACE PLACE DE LA LIBERTE (ANCIENNE MAIRIE)*/BATIMENT PRINCIPAL  Conso Annuelle: 0.0</div>`)[0];
+                popup_b05058debeac2a833358d2f8d837a664.setContent(html_9a4264c7661aa91a604c07cefffda7f6);
+            
+        
+
+        marker_056d804cbc33d5ccf81a3db1fa5777e0.bindPopup(popup_b05058debeac2a833358d2f8d837a664)
+        ;
+
+        
+    
+    
+            var marker_ac0f52c62d1b6b4836de3754373d8b70 = L.marker(
+                [45.183014, 5.76164],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_865b6f8f6a4edcd48e8e1e3803cd8d9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4a313d8ba8f93ee765b8ad63ecf5d23 = $(`<div id="html_e4a313d8ba8f93ee765b8ad63ecf5d23" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE PAULINE LEON (EX AMBROISE CROIZAT)*/CHAUFFERIE GROUPE SCOLAIRE*  Conso Annuelle: 0.0</div>`)[0];
+                popup_865b6f8f6a4edcd48e8e1e3803cd8d9b.setContent(html_e4a313d8ba8f93ee765b8ad63ecf5d23);
+            
+        
+
+        marker_ac0f52c62d1b6b4836de3754373d8b70.bindPopup(popup_865b6f8f6a4edcd48e8e1e3803cd8d9b)
+        ;
+
+        
+    
+    
+            var marker_e40443bab1184eceae00180f4efefa99 = L.marker(
+                [45.188689, 5.754921],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_db1fa968fd471d1c4e81bf5f679f3df4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcc106f274ac61ffbc981dd375436a6d = $(`<div id="html_bcc106f274ac61ffbc981dd375436a6d" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE GABRIEL PERI*/HALTE GARDERIE ALEXANDRA DAVID NEEL  Conso Annuelle: 0.0</div>`)[0];
+                popup_db1fa968fd471d1c4e81bf5f679f3df4.setContent(html_bcc106f274ac61ffbc981dd375436a6d);
+            
+        
+
+        marker_e40443bab1184eceae00180f4efefa99.bindPopup(popup_db1fa968fd471d1c4e81bf5f679f3df4)
+        ;
+
+        
+    
+    
+            var marker_b9a028cce9a1a61a02749db8694b68b7 = L.marker(
+                [45.17931, 5.768715],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_3aaf9916f69eae84caca14e928ac2b46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53807ddb103e3a2b0018b82fa5a0a61a = $(`<div id="html_53807ddb103e3a2b0018b82fa5a0a61a" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE JOLIOT CURIE*/ECOLE ELEMENTAIRE JOLIOT CURIE - ANNEXE 1  Conso Annuelle: 0.0</div>`)[0];
+                popup_3aaf9916f69eae84caca14e928ac2b46.setContent(html_53807ddb103e3a2b0018b82fa5a0a61a);
+            
+        
+
+        marker_b9a028cce9a1a61a02749db8694b68b7.bindPopup(popup_3aaf9916f69eae84caca14e928ac2b46)
+        ;
+
+        
+    
+    
+            var marker_b914f8b4a3532097aab4556fb1c5a6e3 = L.marker(
+                [45.165181, 5.746858],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_9a94d646bf7349842f012cff36d64308 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d2ca7362caedc2f6f78d43934cdb7d2 = $(`<div id="html_6d2ca7362caedc2f6f78d43934cdb7d2" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE PAUL ELUARD*  Conso Annuelle: 0.0</div>`)[0];
+                popup_9a94d646bf7349842f012cff36d64308.setContent(html_6d2ca7362caedc2f6f78d43934cdb7d2);
+            
+        
+
+        marker_b914f8b4a3532097aab4556fb1c5a6e3.bindPopup(popup_9a94d646bf7349842f012cff36d64308)
+        ;
+
+        
+    
+    
+            var marker_0df5801cf3d79f058b52e33c419fc042 = L.marker(
+                [45.167409, 5.765411],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_e84df919258b61a6d4e3bf66831f0a37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21f0cc0d8d3d68ebbaa0648ac7f2bc1e = $(`<div id="html_21f0cc0d8d3d68ebbaa0648ac7f2bc1e" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE ROMAIN ROLLAND*/ECOLE ELEMENTAIRE 2 ROMAIN ROLLAND  Conso Annuelle: 0.0</div>`)[0];
+                popup_e84df919258b61a6d4e3bf66831f0a37.setContent(html_21f0cc0d8d3d68ebbaa0648ac7f2bc1e);
+            
+        
+
+        marker_0df5801cf3d79f058b52e33c419fc042.bindPopup(popup_e84df919258b61a6d4e3bf66831f0a37)
+        ;
+
+        
+    
+    
+            var marker_47828ac598141424a796a395d0b16659 = L.marker(
+                [45.182222, 5.765684],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_0b0c93086b9ad2194b024ad19294e8df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_254d5aa3ccf34d914f0f48466d2cacf4 = $(`<div id="html_254d5aa3ccf34d914f0f48466d2cacf4" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE SAINT JUST (ECOLE ELEMENTAIRE PAUL LANGEVIN - PROVISOIRE)*/LOCAUX CGT DEPARTEMENTAL (EX MEDECINE DU TRAVAIL)  Conso Annuelle: 0.0</div>`)[0];
+                popup_0b0c93086b9ad2194b024ad19294e8df.setContent(html_254d5aa3ccf34d914f0f48466d2cacf4);
+            
+        
+
+        marker_47828ac598141424a796a395d0b16659.bindPopup(popup_0b0c93086b9ad2194b024ad19294e8df)
+        ;
+
+        
+    
+    
+            var marker_344a350fc1bf1234490803d99d000f5c = L.marker(
+                [45.173832, 5.753708],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_c53fb55df20cfcddcf5b0c4a3de65ece = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c63b989e682a2373e604dc3d44614090 = $(`<div id="html_c63b989e682a2373e604dc3d44614090" style="width: 100.0%; height: 100.0%;">POLE JEUNESSE - SECTEUR SPORTIF VOLTAIRE  Conso Annuelle: 0.0</div>`)[0];
+                popup_c53fb55df20cfcddcf5b0c4a3de65ece.setContent(html_c63b989e682a2373e604dc3d44614090);
+            
+        
+
+        marker_344a350fc1bf1234490803d99d000f5c.bindPopup(popup_c53fb55df20cfcddcf5b0c4a3de65ece)
+        ;
+
+        
+    
+    
+            var marker_b4e684541d6eda611f1eac61258635de = L.marker(
+                [45.17261, 5.75768],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_1ddcc57eaa7a6fdc781f4046561b9a0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fd7e870b67a873d1ef626fc2999bf45 = $(`<div id="html_3fd7e870b67a873d1ef626fc2999bf45" style="width: 100.0%; height: 100.0%;">HALTE GARDERIE L'ESSARTIE  Conso Annuelle: 0.0</div>`)[0];
+                popup_1ddcc57eaa7a6fdc781f4046561b9a0a.setContent(html_3fd7e870b67a873d1ef626fc2999bf45);
+            
+        
+
+        marker_b4e684541d6eda611f1eac61258635de.bindPopup(popup_1ddcc57eaa7a6fdc781f4046561b9a0a)
+        ;
+
+        
+    
+    
+            var marker_252aa88ea176d0c3044fe2c88cfc8db8 = L.marker(
+                [45.164787, 5.748117],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_05423042f6dc5c7ebc8faa25e4a1f920 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d92c1c8a67e93ec2211b5b7b3288c325 = $(`<div id="html_d92c1c8a67e93ec2211b5b7b3288c325" style="width: 100.0%; height: 100.0%;">BOULISTES - PAUL ELUARD*/CONTENEUR DE STOCKAGE  Conso Annuelle: 0.0</div>`)[0];
+                popup_05423042f6dc5c7ebc8faa25e4a1f920.setContent(html_d92c1c8a67e93ec2211b5b7b3288c325);
+            
+        
+
+        marker_252aa88ea176d0c3044fe2c88cfc8db8.bindPopup(popup_05423042f6dc5c7ebc8faa25e4a1f920)
+        ;
+
+        
+    
+    
+            var marker_10520e1b465d14bce954365d96fdafc8 = L.marker(
+                [45.170747, 5.751574],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_f561536a82ecb53abcde772f15e2e057 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87dad40766c9bee119f568c358a9460a = $(`<div id="html_87dad40766c9bee119f568c358a9460a" style="width: 100.0%; height: 100.0%;">L'HEURE BLEUE  Conso Annuelle: 0.0</div>`)[0];
+                popup_f561536a82ecb53abcde772f15e2e057.setContent(html_87dad40766c9bee119f568c358a9460a);
+            
+        
+
+        marker_10520e1b465d14bce954365d96fdafc8.bindPopup(popup_f561536a82ecb53abcde772f15e2e057)
+        ;
+
+        
+    
+    
+            var marker_6d10ca1bf0da5b6b685c259b4ac4fefa = L.marker(
+                [45.171164, 5.756532],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_0ec6df5d03b3a6c93c2fded534be294f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f914ace5a923819ec35c3385661da986 = $(`<div id="html_f914ace5a923819ec35c3385661da986" style="width: 100.0%; height: 100.0%;">BATIMENT B31 - AVENUE DU 8 MAI 1945 N°16  Conso Annuelle: 0.0</div>`)[0];
+                popup_0ec6df5d03b3a6c93c2fded534be294f.setContent(html_f914ace5a923819ec35c3385661da986);
+            
+        
+
+        marker_6d10ca1bf0da5b6b685c259b4ac4fefa.bindPopup(popup_0ec6df5d03b3a6c93c2fded534be294f)
+        ;
+
+        
+    
+    
+            var marker_55409790ee38bb27289460ebd07f5daa = L.marker(
+                [45.185015, 5.747909],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_1541b3b1b88caa043646b7ac3916558e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74b7ad71c2db0afa73c57b7759cd66d1 = $(`<div id="html_74b7ad71c2db0afa73c57b7759cd66d1" style="width: 100.0%; height: 100.0%;">LOCAUX RUE ANDRE CHENIER N°03 - INSTITUT HISTOIRE SOCIALE (ARCHIVES CGT)  Conso Annuelle: 0.0</div>`)[0];
+                popup_1541b3b1b88caa043646b7ac3916558e.setContent(html_74b7ad71c2db0afa73c57b7759cd66d1);
+            
+        
+
+        marker_55409790ee38bb27289460ebd07f5daa.bindPopup(popup_1541b3b1b88caa043646b7ac3916558e)
+        ;
+
+        
+    
+    
+            var marker_1a0f9843af691c2be00a1b95190954af = L.marker(
+                [45.170385, 5.752396],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_f571fe78422036b2ba8e1b61812ab4b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_757836aa44915bfcebc7a3d66997c5a5 = $(`<div id="html_757836aa44915bfcebc7a3d66997c5a5" style="width: 100.0%; height: 100.0%;">MAISON COMMUNALE - ANNEXE LA TRIADE (EX UNEDIC-MSP-CIO)*/ RDC - DIRECTION DES AFFAIRES CULTURELLES (DAC)  Conso Annuelle: 0.0</div>`)[0];
+                popup_f571fe78422036b2ba8e1b61812ab4b0.setContent(html_757836aa44915bfcebc7a3d66997c5a5);
+            
+        
+
+        marker_1a0f9843af691c2be00a1b95190954af.bindPopup(popup_f571fe78422036b2ba8e1b61812ab4b0)
+        ;
+
+        
+    
+    
+            var marker_a74f7ca8205496a2d7f6582be7a25b83 = L.marker(
+                [45.162135, 5.761762],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_698c4aa967cecb5ad7b87503be219334 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b276980efe9719d02ec55addd9f60865 = $(`<div id="html_b276980efe9719d02ec55addd9f60865" style="width: 100.0%; height: 100.0%;">LOCAUX RUE DU BEAL N°39*/PRESTATIONS ET MATERIELS  Conso Annuelle: 0.0</div>`)[0];
+                popup_698c4aa967cecb5ad7b87503be219334.setContent(html_b276980efe9719d02ec55addd9f60865);
+            
+        
+
+        marker_a74f7ca8205496a2d7f6582be7a25b83.bindPopup(popup_698c4aa967cecb5ad7b87503be219334)
+        ;
+
+        
+    
+    
+            var marker_c96670f29867d4319cc8cf3c80c0e1b2 = L.marker(
+                [45.176474, 5.76466],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_18dbdb51dc169e7f7760a2f45b4f36e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f962ae34d53b46636f188a52fe554f12 = $(`<div id="html_f962ae34d53b46636f188a52fe554f12" style="width: 100.0%; height: 100.0%;">LOCAUX GUSP - VERLAINE  Conso Annuelle: 0.0</div>`)[0];
+                popup_18dbdb51dc169e7f7760a2f45b4f36e8.setContent(html_f962ae34d53b46636f188a52fe554f12);
+            
+        
+
+        marker_c96670f29867d4319cc8cf3c80c0e1b2.bindPopup(popup_18dbdb51dc169e7f7760a2f45b4f36e8)
+        ;
+
+        
+    
+    
+            var marker_173815d69429294d5b18119d8e2e44f0 = L.marker(
+                [45.17032, 5.756274],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_c913a2f87af33b58ebc2070ef52370a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b6740e861ea6814766ed315dd47db2a = $(`<div id="html_1b6740e861ea6814766ed315dd47db2a" style="width: 100.0%; height: 100.0%;">ANTENNE HABITAT SUD (RENAUDIE)*/AVENUE DU 8 MAI 1945 N°34 - BUREAU/SALLES DE REUNIONS  Conso Annuelle: 0.0</div>`)[0];
+                popup_c913a2f87af33b58ebc2070ef52370a9.setContent(html_1b6740e861ea6814766ed315dd47db2a);
+            
+        
+
+        marker_173815d69429294d5b18119d8e2e44f0.bindPopup(popup_c913a2f87af33b58ebc2070ef52370a9)
+        ;
+
+        
+    
+    
+            var marker_542a63b9c33d3858632a489dafb5d3d4 = L.marker(
+                [45.183634, 5.753936],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_0a662c07917ccd39cad644af30f0e3a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_287122d484f8a799e8c817e5e0a70fd1 = $(`<div id="html_287122d484f8a799e8c817e5e0a70fd1" style="width: 100.0%; height: 100.0%;">MAISON COMMUNALE - ANNEXE FRACHON (EX POLE JEUNESSE)*  Conso Annuelle: 0.0</div>`)[0];
+                popup_0a662c07917ccd39cad644af30f0e3a4.setContent(html_287122d484f8a799e8c817e5e0a70fd1);
+            
+        
+
+        marker_542a63b9c33d3858632a489dafb5d3d4.bindPopup(popup_0a662c07917ccd39cad644af30f0e3a4)
+        ;
+
+        
+    
+    
+            var marker_332a8c9ef65ef51726bdcd2ac05a545d = L.marker(
+                [45.18288, 5.75527],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_4a84df44ec7c23ff786d743feb055d60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85abf6190028379f2194740fad6243e4 = $(`<div id="html_85abf6190028379f2194740fad6243e4" style="width: 100.0%; height: 100.0%;">POLICE MUNICIPALE  Conso Annuelle: 0.0</div>`)[0];
+                popup_4a84df44ec7c23ff786d743feb055d60.setContent(html_85abf6190028379f2194740fad6243e4);
+            
+        
+
+        marker_332a8c9ef65ef51726bdcd2ac05a545d.bindPopup(popup_4a84df44ec7c23ff786d743feb055d60)
+        ;
+
+        
+    
+    
+            var marker_1dfc85f6014a82ec146d3943d8813905 = L.marker(
+                [45.16978, 5.75605],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_383ade348080d55acdae51cf916f942f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a65338f0ac5bfef074687aebb8bcc7ce = $(`<div id="html_a65338f0ac5bfef074687aebb8bcc7ce" style="width: 100.0%; height: 100.0%;">LOCAUX ESPACES VERTS - RENAUDIE*/N°48 - LOCAL MATERIELS ET VEHICULES  Conso Annuelle: 0.0</div>`)[0];
+                popup_383ade348080d55acdae51cf916f942f.setContent(html_a65338f0ac5bfef074687aebb8bcc7ce);
+            
+        
+
+        marker_1dfc85f6014a82ec146d3943d8813905.bindPopup(popup_383ade348080d55acdae51cf916f942f)
+        ;
+
+        
+    
+    
+            var marker_128e6c5d72df8e98800fc0054611329f = L.marker(
+                [45.16961, 5.756025],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_0935f4c8948ecdf3db54951aa650585b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eecae9e9158b13631db07b4900c19884 = $(`<div id="html_eecae9e9158b13631db07b4900c19884" style="width: 100.0%; height: 100.0%;">LOCAUX ESPACES VERTS - RENAUDIE*/N°52 - LOCAL TECHNIQUE / BUREAUX  Conso Annuelle: 0.0</div>`)[0];
+                popup_0935f4c8948ecdf3db54951aa650585b.setContent(html_eecae9e9158b13631db07b4900c19884);
+            
+        
+
+        marker_128e6c5d72df8e98800fc0054611329f.bindPopup(popup_0935f4c8948ecdf3db54951aa650585b)
+        ;
+
+        
+    
+    
+            var marker_6f33dd77f9e8fd1aa847f528f76d06a0 = L.marker(
+                [45.186304, 5.748688],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_a344ce074bc87d6a6736a57689512d33 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92b62dbd45da7f64fd87a9226563b5f4 = $(`<div id="html_92b62dbd45da7f64fd87a9226563b5f4" style="width: 100.0%; height: 100.0%;">LOCAUX PLACE DE LA REPUBLIQUE N°03 (EX TRESORERIE)  Conso Annuelle: 0.0</div>`)[0];
+                popup_a344ce074bc87d6a6736a57689512d33.setContent(html_92b62dbd45da7f64fd87a9226563b5f4);
+            
+        
+
+        marker_6f33dd77f9e8fd1aa847f528f76d06a0.bindPopup(popup_a344ce074bc87d6a6736a57689512d33)
+        ;
+
+        
+    
+    
+            var marker_f9aeca9073c1a5e0e4b365d250344d95 = L.marker(
+                [45.183498, 5.753282],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_bbdced38bbaeae2818a4dc02c418f1d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c3120ac2b7315d1c193618d99a93b45 = $(`<div id="html_7c3120ac2b7315d1c193618d99a93b45" style="width: 100.0%; height: 100.0%;">BOULISTES - ESPACE CASANOVA*/BOULODROME STEPHANE VIGHETTI  Conso Annuelle: 0.0</div>`)[0];
+                popup_bbdced38bbaeae2818a4dc02c418f1d3.setContent(html_7c3120ac2b7315d1c193618d99a93b45);
+            
+        
+
+        marker_f9aeca9073c1a5e0e4b365d250344d95.bindPopup(popup_bbdced38bbaeae2818a4dc02c418f1d3)
+        ;
+
+        
+    
+    
+            var marker_77339e34b7aaa0b5dd1f9fe81d8e16ce = L.marker(
+                [45.185617, 5.74817],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_4ac8d21539f5b6dc82dc65cd31daeb35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fa5cddbb8a1c51dab83c77563855b61 = $(`<div id="html_0fa5cddbb8a1c51dab83c77563855b61" style="width: 100.0%; height: 100.0%;">CENTRE CULTUREL  Conso Annuelle: 0.0</div>`)[0];
+                popup_4ac8d21539f5b6dc82dc65cd31daeb35.setContent(html_0fa5cddbb8a1c51dab83c77563855b61);
+            
+        
+
+        marker_77339e34b7aaa0b5dd1f9fe81d8e16ce.bindPopup(popup_4ac8d21539f5b6dc82dc65cd31daeb35)
+        ;
+
+        
+    
+    
+            var marker_aaa03552c081b2cabd7a5047b2cb7588 = L.marker(
+                [45.180182, 5.753108],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_3c4783139e7666d3b24a6fc9e6905c71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6f7ab0d52efee346b608b4f0ec383da = $(`<div id="html_f6f7ab0d52efee346b608b4f0ec383da" style="width: 100.0%; height: 100.0%;">MAISON RUE PIERRE ET MARIE CURIE N°05 - ARTS DU RECIT (EX MAISON SANCHEZ)  Conso Annuelle: 0.0</div>`)[0];
+                popup_3c4783139e7666d3b24a6fc9e6905c71.setContent(html_f6f7ab0d52efee346b608b4f0ec383da);
+            
+        
+
+        marker_aaa03552c081b2cabd7a5047b2cb7588.bindPopup(popup_3c4783139e7666d3b24a6fc9e6905c71)
+        ;
+
+        
+    
+    
+            var marker_ae9f446597cda911294ac07ed30e1215 = L.marker(
+                [45.182832, 5.753536],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_75b9deb2debf281d4dbc71c65302cc2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdffea98a005c09fe1632332470fac5d = $(`<div id="html_cdffea98a005c09fe1632332470fac5d" style="width: 100.0%; height: 100.0%;">MAISON COMMUNALE - ANNEXE BELLEDONNE  Conso Annuelle: 0.0</div>`)[0];
+                popup_75b9deb2debf281d4dbc71c65302cc2d.setContent(html_cdffea98a005c09fe1632332470fac5d);
+            
+        
+
+        marker_ae9f446597cda911294ac07ed30e1215.bindPopup(popup_75b9deb2debf281d4dbc71c65302cc2d)
+        ;
+
+        
+    
+    
+            var marker_2d7c5b9c41be8211d87d366a170691e0 = L.marker(
+                [45.175135, 5.758655],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_25396ce48a3b466d2bc2bf52079e5009 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8301291457bfaa2f3ab2bce47a8cccb9 = $(`<div id="html_8301291457bfaa2f3ab2bce47a8cccb9" style="width: 100.0%; height: 100.0%;">LOCAUX ESPACES VERTS - PARC JO BLANCHON  Conso Annuelle: 0.0</div>`)[0];
+                popup_25396ce48a3b466d2bc2bf52079e5009.setContent(html_8301291457bfaa2f3ab2bce47a8cccb9);
+            
+        
+
+        marker_2d7c5b9c41be8211d87d366a170691e0.bindPopup(popup_25396ce48a3b466d2bc2bf52079e5009)
+        ;
+
+        
+    
+    
+            var marker_7436446221ac51f79fe0690eceffacd5 = L.marker(
+                [45.16887, 5.767507],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_82ee711e0b0431d70d0efa0a47196519 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b686668a5dcbafa5be97040689ed85d = $(`<div id="html_4b686668a5dcbafa5be97040689ed85d" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF JEAN-PIERRE BOY*/GYMNASE JEAN-PIERRE BOY  Conso Annuelle: 0.0</div>`)[0];
+                popup_82ee711e0b0431d70d0efa0a47196519.setContent(html_4b686668a5dcbafa5be97040689ed85d);
+            
+        
+
+        marker_7436446221ac51f79fe0690eceffacd5.bindPopup(popup_82ee711e0b0431d70d0efa0a47196519)
+        ;
+
+        
+    
+    
+            var marker_258b113c3b98c66ac4c218b35ea368ff = L.marker(
+                [45.183304, 5.751135],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_b408b50e45dabd29472b9e90b69f2d3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b07327817d203d91d6c3eca854e38027 = $(`<div id="html_b07327817d203d91d6c3eca854e38027" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF AUGUSTE DELAUNE*/GYMNASE AUGUSTE DELAUNE  Conso Annuelle: 0.0</div>`)[0];
+                popup_b408b50e45dabd29472b9e90b69f2d3f.setContent(html_b07327817d203d91d6c3eca854e38027);
+            
+        
+
+        marker_258b113c3b98c66ac4c218b35ea368ff.bindPopup(popup_b408b50e45dabd29472b9e90b69f2d3f)
+        ;
+
+        
+    
+    
+            var marker_6606ba790837097faf1a1d6991418ce9 = L.marker(
+                [45.168333, 5.767166],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_ca6a0cdf9186a1443f1fd64f201164c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a94089982a47aa1318f5000a3bb7ac4d = $(`<div id="html_a94089982a47aa1318f5000a3bb7ac4d" style="width: 100.0%; height: 100.0%;">TENNIS MUNICIPAUX/COURS DE TENNIS*  Conso Annuelle: 0.0</div>`)[0];
+                popup_ca6a0cdf9186a1443f1fd64f201164c6.setContent(html_a94089982a47aa1318f5000a3bb7ac4d);
+            
+        
+
+        marker_6606ba790837097faf1a1d6991418ce9.bindPopup(popup_ca6a0cdf9186a1443f1fd64f201164c6)
+        ;
+
+        
+    
+    
+            var marker_ff9e20044714938da8526e38f8040f50 = L.marker(
+                [45.179606, 5.754711],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_4ea8e76a2c8e79a454dc48d2607411f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a73203a103cd981bfd3968ff6659d1b7 = $(`<div id="html_a73203a103cd981bfd3968ff6659d1b7" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF BENOIT FRACHON*/GYMNASE DENISE MEUNIER (EX BENOIT FRACHON)  Conso Annuelle: 0.0</div>`)[0];
+                popup_4ea8e76a2c8e79a454dc48d2607411f6.setContent(html_a73203a103cd981bfd3968ff6659d1b7);
+            
+        
+
+        marker_ff9e20044714938da8526e38f8040f50.bindPopup(popup_4ea8e76a2c8e79a454dc48d2607411f6)
+        ;
+
+        
+    
+    
+            var marker_a62fb6de1d9ba05f9ef6a9f8e8d202f0 = L.marker(
+                [45.16726, 5.75521],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_5c7cc739a75e79232752861355f9863b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4f01d621c91faea7ed79fdbc5197032 = $(`<div id="html_a4f01d621c91faea7ed79fdbc5197032" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF EDMOND INEBRIA*/ESPACE SPORTIF EDMOND INEBRIA  Conso Annuelle: 0.0</div>`)[0];
+                popup_5c7cc739a75e79232752861355f9863b.setContent(html_a4f01d621c91faea7ed79fdbc5197032);
+            
+        
+
+        marker_a62fb6de1d9ba05f9ef6a9f8e8d202f0.bindPopup(popup_5c7cc739a75e79232752861355f9863b)
+        ;
+
+        
+    
+    
+            var marker_bdb896bbe653ddef2a0199afd5f3c96c = L.marker(
+                [45.166983, 5.749897],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_c59cd5af13abad9b19b5c397fea4f7ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f21ae9fe88a6448583737e18d6f9d8b = $(`<div id="html_3f21ae9fe88a6448583737e18d6f9d8b" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF HENRI MAURICE*/GYMNASE HENRI MAURICE  Conso Annuelle: 0.0</div>`)[0];
+                popup_c59cd5af13abad9b19b5c397fea4f7ac.setContent(html_3f21ae9fe88a6448583737e18d6f9d8b);
+            
+        
+
+        marker_bdb896bbe653ddef2a0199afd5f3c96c.bindPopup(popup_c59cd5af13abad9b19b5c397fea4f7ac)
+        ;
+
+        
+    
+    
+            var marker_e0801bdadaff5baec180e8cd832d42b0 = L.marker(
+                [45.17916, 5.75814],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_9bf2ea1fbe973764f0c01bb1e2d8de2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a159590c2c416b90a7093fbb13e891f3 = $(`<div id="html_a159590c2c416b90a7093fbb13e891f3" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF PAUL LANGEVIN*/GYMNASE PAUL LANGEVIN  Conso Annuelle: 0.0</div>`)[0];
+                popup_9bf2ea1fbe973764f0c01bb1e2d8de2e.setContent(html_a159590c2c416b90a7093fbb13e891f3);
+            
+        
+
+        marker_e0801bdadaff5baec180e8cd832d42b0.bindPopup(popup_9bf2ea1fbe973764f0c01bb1e2d8de2e)
+        ;
+
+        
+    
+    
+            var marker_196a0be84a3052899107b1b670602033 = L.marker(
+                [45.16937, 5.768021],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_bcf41248834c4ced70470e5a9e610931 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a7b9a0c37f450fd42e299bdb08ebb69 = $(`<div id="html_9a7b9a0c37f450fd42e299bdb08ebb69" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF ROBERT BARRAN*/STADE ROBERT BARRAN - LOCAUX SPORTIFS  Conso Annuelle: 0.0</div>`)[0];
+                popup_bcf41248834c4ced70470e5a9e610931.setContent(html_9a7b9a0c37f450fd42e299bdb08ebb69);
+            
+        
+
+        marker_196a0be84a3052899107b1b670602033.bindPopup(popup_bcf41248834c4ced70470e5a9e610931)
+        ;
+
+        
+    
+    
+            var marker_6ed7629b8c140c86aed26e7e68e6b38f = L.marker(
+                [45.165795, 5.755584],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_311c5fc640d3814b01b5f2400a1a52a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_772ee9584ecb3374644e37d9f90d419f = $(`<div id="html_772ee9584ecb3374644e37d9f90d419f" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF VICTOR HUGO*/STADE VICTOR HUGO - LOCAUX (BUVETTE/LOCAL TECHNIQUE/VESTIAIRES)  Conso Annuelle: 0.0</div>`)[0];
+                popup_311c5fc640d3814b01b5f2400a1a52a1.setContent(html_772ee9584ecb3374644e37d9f90d419f);
+            
+        
+
+        marker_6ed7629b8c140c86aed26e7e68e6b38f.bindPopup(popup_311c5fc640d3814b01b5f2400a1a52a1)
+        ;
+
+        
+    
+    
+            var marker_194d46538b5f6c8a3fba8a86994aea92 = L.marker(
+                [45.18086, 5.770683],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_abadc32248f893f31a6f5127f5218131 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df909a7873f8e3eb5558491bc1993270 = $(`<div id="html_df909a7873f8e3eb5558491bc1993270" style="width: 100.0%; height: 100.0%;">ESPACE ELSA TRIOLET  Conso Annuelle: 0.0</div>`)[0];
+                popup_abadc32248f893f31a6f5127f5218131.setContent(html_df909a7873f8e3eb5558491bc1993270);
+            
+        
+
+        marker_194d46538b5f6c8a3fba8a86994aea92.bindPopup(popup_abadc32248f893f31a6f5127f5218131)
+        ;
+
+        
+    
+    
+            var marker_9c964d23166230a86956a5ab0bd9ac10 = L.marker(
+                [45.165565, 5.754402],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_456e5a06d90fcceac6d846df7304ccc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5fd31720d689969017fd515d0df543b = $(`<div id="html_c5fd31720d689969017fd515d0df543b" style="width: 100.0%; height: 100.0%;">ESPACE PETITE ENFANCE EUGENIE COTTON  Conso Annuelle: 0.0</div>`)[0];
+                popup_456e5a06d90fcceac6d846df7304ccc4.setContent(html_c5fd31720d689969017fd515d0df543b);
+            
+        
+
+        marker_9c964d23166230a86956a5ab0bd9ac10.bindPopup(popup_456e5a06d90fcceac6d846df7304ccc4)
+        ;
+
+        
+    
+    
+            var marker_169b129655bce9635beb397a867e4bda = L.marker(
+                [45.167631, 5.763592],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_d30edbae95762185980c794e0a1af9e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d82e6283861f36d34e86562bc9751cfb = $(`<div id="html_d82e6283861f36d34e86562bc9751cfb" style="width: 100.0%; height: 100.0%;">ESPACE PETITE ENFANCE ROMAIN ROLLAND  Conso Annuelle: 0.0</div>`)[0];
+                popup_d30edbae95762185980c794e0a1af9e5.setContent(html_d82e6283861f36d34e86562bc9751cfb);
+            
+        
+
+        marker_169b129655bce9635beb397a867e4bda.bindPopup(popup_d30edbae95762185980c794e0a1af9e5)
+        ;
+
+        
+    
+    
+            var marker_324371a23cb26801ce1ac900a94f762e = L.marker(
+                [45.182848, 5.764201],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_e79e78c06d8aa784f756c864366e45af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_586a257b7bd59168b7236675c92163cb = $(`<div id="html_586a257b7bd59168b7236675c92163cb" style="width: 100.0%; height: 100.0%;">ESPACE PETITE ENFANCE SALVADOR ALLENDE  Conso Annuelle: 0.0</div>`)[0];
+                popup_e79e78c06d8aa784f756c864366e45af.setContent(html_586a257b7bd59168b7236675c92163cb);
+            
+        
+
+        marker_324371a23cb26801ce1ac900a94f762e.bindPopup(popup_e79e78c06d8aa784f756c864366e45af)
+        ;
+
+        
+    
+    
+            var marker_8859557e319c4634d2ae6487c6abed58 = L.marker(
+                [45.162783, 5.764372],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_2576a6647acbc064979e25e3b38e33ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48391edb450511e589872724c97beddc = $(`<div id="html_48391edb450511e589872724c97beddc" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE CONDORCET*/ECOLE ELEMENTAIRE CONDORCET  Conso Annuelle: 0.0</div>`)[0];
+                popup_2576a6647acbc064979e25e3b38e33ec.setContent(html_48391edb450511e589872724c97beddc);
+            
+        
+
+        marker_8859557e319c4634d2ae6487c6abed58.bindPopup(popup_2576a6647acbc064979e25e3b38e33ec)
+        ;
+
+        
+    
+    
+            var marker_cb5d5936894b15420a95c39a4624ccce = L.marker(
+                [45.171445, 5.759234],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_ee9f6672349c33ce525b7b0cedd78160 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a497d69c513a8af301e4b9b05289758 = $(`<div id="html_4a497d69c513a8af301e4b9b05289758" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE HENRI BARBUSSE*/ECOLE ELEMENTAIRE HENRI BARBUSSE  Conso Annuelle: 0.0</div>`)[0];
+                popup_ee9f6672349c33ce525b7b0cedd78160.setContent(html_4a497d69c513a8af301e4b9b05289758);
+            
+        
+
+        marker_cb5d5936894b15420a95c39a4624ccce.bindPopup(popup_ee9f6672349c33ce525b7b0cedd78160)
+        ;
+
+        
+    
+    
+            var marker_031503592e3df5286cb4d5122b1daca0 = L.marker(
+                [45.171099, 5.758899],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_1b97584836f11508ce2019e9d06bb9e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f921505f2faad804f623a0b67af9e96a = $(`<div id="html_f921505f2faad804f623a0b67af9e96a" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE HENRI BARBUSSE*/ECOLE MATERNELLE HENRI BARBUSSE  Conso Annuelle: 0.0</div>`)[0];
+                popup_1b97584836f11508ce2019e9d06bb9e0.setContent(html_f921505f2faad804f623a0b67af9e96a);
+            
+        
+
+        marker_031503592e3df5286cb4d5122b1daca0.bindPopup(popup_1b97584836f11508ce2019e9d06bb9e0)
+        ;
+
+        
+    
+    
+            var marker_7d6ad66d7bd9b39d9551c51f88364665 = L.marker(
+                [45.17229, 5.75594],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_d0426cac1b4cc68bfb7e6518290626b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e9c78f3b6279ddcf41d10e5a5015dea = $(`<div id="html_3e9c78f3b6279ddcf41d10e5a5015dea" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE JEANNE LABOURBE*/ECOLE MATERNELLE JEANNE LABOURBE  Conso Annuelle: 0.0</div>`)[0];
+                popup_d0426cac1b4cc68bfb7e6518290626b0.setContent(html_3e9c78f3b6279ddcf41d10e5a5015dea);
+            
+        
+
+        marker_7d6ad66d7bd9b39d9551c51f88364665.bindPopup(popup_d0426cac1b4cc68bfb7e6518290626b0)
+        ;
+
+        
+    
+    
+            var marker_8dd4067e0db57e151d4279e4c4efb708 = L.marker(
+                [45.180236, 5.769399],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_8548944dc583494d9c6adb3e90922bec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf3d150be6fb98df684642e0a93f9c6d = $(`<div id="html_bf3d150be6fb98df684642e0a93f9c6d" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE JOLIOT CURIE*/ECOLE MATERNELLE JOLIOT CURIE  Conso Annuelle: 0.0</div>`)[0];
+                popup_8548944dc583494d9c6adb3e90922bec.setContent(html_bf3d150be6fb98df684642e0a93f9c6d);
+            
+        
+
+        marker_8dd4067e0db57e151d4279e4c4efb708.bindPopup(popup_8548944dc583494d9c6adb3e90922bec)
+        ;
+
+        
+    
+    
+            var marker_6f582a508ae5775aab027a3241af32ae = L.marker(
+                [45.166185, 5.750764],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_2c594dc9589832091698787f1439b1b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f60578d83c6c47c1788c748151ae8527 = $(`<div id="html_f60578d83c6c47c1788c748151ae8527" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE PAUL BERT*/ECOLE ELEMENTAIRE PAUL BERT  Conso Annuelle: 0.0</div>`)[0];
+                popup_2c594dc9589832091698787f1439b1b0.setContent(html_f60578d83c6c47c1788c748151ae8527);
+            
+        
+
+        marker_6f582a508ae5775aab027a3241af32ae.bindPopup(popup_2c594dc9589832091698787f1439b1b0)
+        ;
+
+        
+    
+    
+            var marker_3ecf63efc4385a8ae67d0e51f8a0e441 = L.marker(
+                [45.179223, 5.759393],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_54b35697a3b5ed052661754e85fff225 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb132aec8d63e19a4dbbf84aaa447d0a = $(`<div id="html_eb132aec8d63e19a4dbbf84aaa447d0a" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE PAUL LANGEVIN*/ECOLE MATERNELLE PAUL LANGEVIN  Conso Annuelle: 0.0</div>`)[0];
+                popup_54b35697a3b5ed052661754e85fff225.setContent(html_eb132aec8d63e19a4dbbf84aaa447d0a);
+            
+        
+
+        marker_3ecf63efc4385a8ae67d0e51f8a0e441.bindPopup(popup_54b35697a3b5ed052661754e85fff225)
+        ;
+
+        
+    
+    
+            var marker_2f38fb87d8d6dad16cdea115b682a5d6 = L.marker(
+                [45.183225, 5.751574],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_8be3a99ad51b116b5733cbb7cd217f9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a56a7ca15a9f9d6ed8aa311b2a36e07 = $(`<div id="html_3a56a7ca15a9f9d6ed8aa311b2a36e07" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE VAILLANT COUTURIER*/ECOLE MATERNELLE VAILLANT COUTURIER  Conso Annuelle: 0.0</div>`)[0];
+                popup_8be3a99ad51b116b5733cbb7cd217f9a.setContent(html_3a56a7ca15a9f9d6ed8aa311b2a36e07);
+            
+        
+
+        marker_2f38fb87d8d6dad16cdea115b682a5d6.bindPopup(popup_8be3a99ad51b116b5733cbb7cd217f9a)
+        ;
+
+        
+    
+    
+            var marker_fc067d025df9bf24721e7bd3c50d2abc = L.marker(
+                [45.183797, 5.754952],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_093360b7c734412b3d8296c6841ebb4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32ac87cc2c240910269dd0c68001eff8 = $(`<div id="html_32ac87cc2c240910269dd0c68001eff8" style="width: 100.0%; height: 100.0%;">MAISON COMMUNALE  Conso Annuelle: 144450.6667</div>`)[0];
+                popup_093360b7c734412b3d8296c6841ebb4c.setContent(html_32ac87cc2c240910269dd0c68001eff8);
+            
+        
+
+        marker_fc067d025df9bf24721e7bd3c50d2abc.bindPopup(popup_093360b7c734412b3d8296c6841ebb4c)
+        ;
+
+        
+    
+    
+            var marker_3923493ea9eda9f26cb05e4ef2e43dda = L.marker(
+                [45.18925, 5.754288],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_cce39fe7653fe196eaa629c59e8213fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7f8010b9e4e69d51f53fd8d9d68b685 = $(`<div id="html_c7f8010b9e4e69d51f53fd8d9d68b685" style="width: 100.0%; height: 100.0%;">MAISON DE QUARTIER BIDAL PERI*  Conso Annuelle: 0.0</div>`)[0];
+                popup_cce39fe7653fe196eaa629c59e8213fd.setContent(html_c7f8010b9e4e69d51f53fd8d9d68b685);
+            
+        
+
+        marker_3923493ea9eda9f26cb05e4ef2e43dda.bindPopup(popup_cce39fe7653fe196eaa629c59e8213fd)
+        ;
+
+        
+    
+    
+            var marker_2115cb4b66ac497aaf1dae44397eedd2 = L.marker(
+                [45.182513, 5.760879],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_aefd1aa613e03ccd94babc3f81aa0e61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93809fb77512cf2d1078999e47dd4492 = $(`<div id="html_93809fb77512cf2d1078999e47dd4492" style="width: 100.0%; height: 100.0%;">MAISON DE QUARTIER FERNAND TEXIER  Conso Annuelle: 0.0</div>`)[0];
+                popup_aefd1aa613e03ccd94babc3f81aa0e61.setContent(html_93809fb77512cf2d1078999e47dd4492);
+            
+        
+
+        marker_2115cb4b66ac497aaf1dae44397eedd2.bindPopup(popup_aefd1aa613e03ccd94babc3f81aa0e61)
+        ;
+
+        
+    
+    
+            var marker_58fac9f91754e41ca0f7636538620a05 = L.marker(
+                [45.16933, 5.757637],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_8418298ea4c86fd00f23c55fe13c8f91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_626dd7f4b01aaf2ca4796b52d3a7c16d = $(`<div id="html_626dd7f4b01aaf2ca4796b52d3a7c16d" style="width: 100.0%; height: 100.0%;">MAISON DE QUARTIER LOUIS ARAGON  Conso Annuelle: 0.0</div>`)[0];
+                popup_8418298ea4c86fd00f23c55fe13c8f91.setContent(html_626dd7f4b01aaf2ca4796b52d3a7c16d);
+            
+        
+
+        marker_58fac9f91754e41ca0f7636538620a05.bindPopup(popup_8418298ea4c86fd00f23c55fe13c8f91)
+        ;
+
+        
+    
+    
+            var marker_184ff9d68770ce49309230ab317b3604 = L.marker(
+                [45.181357, 5.75249],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_63e88be914050573032ceb0714e88dbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7b2ac59983f51be73f285dda888556e = $(`<div id="html_e7b2ac59983f51be73f285dda888556e" style="width: 100.0%; height: 100.0%;">LOCAUX RUE LOUISE MICHEL N°20 (EX SPORTS MECANIQUES) - LOCAUX MURES  Conso Annuelle: 0.0</div>`)[0];
+                popup_63e88be914050573032ceb0714e88dbc.setContent(html_e7b2ac59983f51be73f285dda888556e);
+            
+        
+
+        marker_184ff9d68770ce49309230ab317b3604.bindPopup(popup_63e88be914050573032ceb0714e88dbc)
+        ;
+
+        
+    
+    
+            var marker_12fcba58e47f99154123fe6337c2747a = L.marker(
+                [45.176636, 5.766574],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_a12dd69afa53b75068356cec0d2be152 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ba9362a48f932e3c37cc9c880d94707 = $(`<div id="html_2ba9362a48f932e3c37cc9c880d94707" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF COLETTE BESSON*/GYMNASE COLETTE BESSON  Conso Annuelle: 0.0</div>`)[0];
+                popup_a12dd69afa53b75068356cec0d2be152.setContent(html_2ba9362a48f932e3c37cc9c880d94707);
+            
+        
+
+        marker_12fcba58e47f99154123fe6337c2747a.bindPopup(popup_a12dd69afa53b75068356cec0d2be152)
+        ;
+
+        
+    
+    
+            var marker_0bed75fa8ffee84290ec14cefba79bdb = L.marker(
+                [45.186158, 5.748869],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_22354cd34b4dca27c5538d55d2ead17f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_728f43c404573862f39eabd905d4d851 = $(`<div id="html_728f43c404573862f39eabd905d4d851" style="width: 100.0%; height: 100.0%;">SALLE CROIX ROUGE - RUE DOCTEUR ROUX N°22  Conso Annuelle: 0.0</div>`)[0];
+                popup_22354cd34b4dca27c5538d55d2ead17f.setContent(html_728f43c404573862f39eabd905d4d851);
+            
+        
+
+        marker_0bed75fa8ffee84290ec14cefba79bdb.bindPopup(popup_22354cd34b4dca27c5538d55d2ead17f)
+        ;
+
+        
+    
+    
+            var marker_6dde60cb2dd492415b2b5c04414e1091 = L.marker(
+                [45.172567, 5.76266],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_f27adfa380dd2d92e7e46320ab63a7fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35d82c58bd12422501b57225dd2a201d = $(`<div id="html_35d82c58bd12422501b57225dd2a201d" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF PABLO NERUDA*/GYMNASE HALLE DES SPORTS  Conso Annuelle: 0.0</div>`)[0];
+                popup_f27adfa380dd2d92e7e46320ab63a7fc.setContent(html_35d82c58bd12422501b57225dd2a201d);
+            
+        
+
+        marker_6dde60cb2dd492415b2b5c04414e1091.bindPopup(popup_f27adfa380dd2d92e7e46320ab63a7fc)
+        ;
+
+        
+    
+    
+            var marker_ca38752346d6e21646446bb0ffa59820 = L.marker(
+                [45.169215, 5.76818],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_9ab2747d30b538aa81201e68b2675f45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_548d7540f63605eff9abd52d1b9d138c = $(`<div id="html_548d7540f63605eff9abd52d1b9d138c" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF ROBERT BARRAN*/LOGEMENT ROBERT BARRAN - APPARTEMENT T4 (1 LOCATAIRE)  Conso Annuelle: 0.0</div>`)[0];
+                popup_9ab2747d30b538aa81201e68b2675f45.setContent(html_548d7540f63605eff9abd52d1b9d138c);
+            
+        
+
+        marker_ca38752346d6e21646446bb0ffa59820.bindPopup(popup_9ab2747d30b538aa81201e68b2675f45)
+        ;
+
+        
+    
+    
+            var marker_139a70733e0b1de6a3d4c4aea27cccee = L.marker(
+                [45.185595, 5.747303],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_346421ce0d587e837ec654edf01938f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee413a8c4937ba8cb849ac2a25523577 = $(`<div id="html_ee413a8c4937ba8cb849ac2a25523577" style="width: 100.0%; height: 100.0%;">MON CINE  Conso Annuelle: 0.0</div>`)[0];
+                popup_346421ce0d587e837ec654edf01938f3.setContent(html_ee413a8c4937ba8cb849ac2a25523577);
+            
+        
+
+        marker_139a70733e0b1de6a3d4c4aea27cccee.bindPopup(popup_346421ce0d587e837ec654edf01938f3)
+        ;
+
+        
+    
+    
+            var marker_1d463c3a106a16ea95cb5522e8a5017b = L.marker(
+                [45.166829, 5.751501],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_8f09a940388642d5ed5ccbc94d9c5b92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54a675681f59e30415ba2c89b9b22c96 = $(`<div id="html_54a675681f59e30415ba2c89b9b22c96" style="width: 100.0%; height: 100.0%;">ESPACE CULTUREL RENE PROBY  Conso Annuelle: 0.0</div>`)[0];
+                popup_8f09a940388642d5ed5ccbc94d9c5b92.setContent(html_54a675681f59e30415ba2c89b9b22c96);
+            
+        
+
+        marker_1d463c3a106a16ea95cb5522e8a5017b.bindPopup(popup_8f09a940388642d5ed5ccbc94d9c5b92)
+        ;
+
+        
+    
+    
+            var marker_3be184cecfb4b2c28d4c2562cdf0179d = L.marker(
+                [45.183264, 5.753963],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_28095da1c31202cce9dd4456f06d1649 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b2a4f46865f9129954ca07c03ab5e83 = $(`<div id="html_0b2a4f46865f9129954ca07c03ab5e83" style="width: 100.0%; height: 100.0%;">MAISON COMMUNALE - ANNEXE CCAS (EX DRH)  Conso Annuelle: 0.0</div>`)[0];
+                popup_28095da1c31202cce9dd4456f06d1649.setContent(html_0b2a4f46865f9129954ca07c03ab5e83);
+            
+        
+
+        marker_3be184cecfb4b2c28d4c2562cdf0179d.bindPopup(popup_28095da1c31202cce9dd4456f06d1649)
+        ;
+
+        
+    
+    
+            var marker_718ba189934c22ad3fbd7039d214f959 = L.marker(
+                [45.169535, 5.755985],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_913788c1874be14ea0012f164caeb9ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_275940b877151f36fb90c766aac355c8 = $(`<div id="html_275940b877151f36fb90c766aac355c8" style="width: 100.0%; height: 100.0%;">LOCAUX ESPACES VERTS - RENAUDIE*/N°54 - LOCAL MATERIELS ET VEHICULES  Conso Annuelle: 0.0</div>`)[0];
+                popup_913788c1874be14ea0012f164caeb9ac.setContent(html_275940b877151f36fb90c766aac355c8);
+            
+        
+
+        marker_718ba189934c22ad3fbd7039d214f959.bindPopup(popup_913788c1874be14ea0012f164caeb9ac)
+        ;
+
+        
+    
+    
+            var marker_641191490274e005f58cdb282508f901 = L.marker(
+                [45.182881, 5.75311],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_fcfeb580430d5d93031c8aedc23a5408 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de49d1d991f25e903a010ea0efaa43ea = $(`<div id="html_de49d1d991f25e903a010ea0efaa43ea" style="width: 100.0%; height: 100.0%;">MAISON COMMUNALE - ANNEXE CASANOVA*  Conso Annuelle: 0.0</div>`)[0];
+                popup_fcfeb580430d5d93031c8aedc23a5408.setContent(html_de49d1d991f25e903a010ea0efaa43ea);
+            
+        
+
+        marker_641191490274e005f58cdb282508f901.bindPopup(popup_fcfeb580430d5d93031c8aedc23a5408)
+        ;
+
+        
+    
+    
+            var marker_a4003028da7c30f20e6efa7aac6341ea = L.marker(
+                [45.176569, 5.764507],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_333be162bb016194ca83460df0de45d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13645c717a40e83df48d6fef9c11bf72 = $(`<div id="html_13645c717a40e83df48d6fef9c11bf72" style="width: 100.0%; height: 100.0%;">ESPACE VERLAINE - SALLE MULTIFONCTION  Conso Annuelle: 0.0</div>`)[0];
+                popup_333be162bb016194ca83460df0de45d5.setContent(html_13645c717a40e83df48d6fef9c11bf72);
+            
+        
+
+        marker_a4003028da7c30f20e6efa7aac6341ea.bindPopup(popup_333be162bb016194ca83460df0de45d5)
+        ;
+
+        
+    
+    
+            var marker_7b4054c6edb8d667680a4b2d768afb08 = L.marker(
+                [45.172625, 5.762215],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_152bd0ba66216c9027132d8cd3622c0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76b1cfff216c51173a16f5e120e95660 = $(`<div id="html_76b1cfff216c51173a16f5e120e95660" style="width: 100.0%; height: 100.0%;">ENSEMBLE SPORTIF PABLO NERUDA*/LOCAL ASSOCIATIONS SPORTIVES JUST FONTAINE  Conso Annuelle: 0.0</div>`)[0];
+                popup_152bd0ba66216c9027132d8cd3622c0a.setContent(html_76b1cfff216c51173a16f5e120e95660);
+            
+        
+
+        marker_7b4054c6edb8d667680a4b2d768afb08.bindPopup(popup_152bd0ba66216c9027132d8cd3622c0a)
+        ;
+
+        
+    
+    
+            var marker_2c03de19d47a531da33a4fdf360c9a05 = L.marker(
+                [45.170118, 5.75609],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_69270505bdeb78ac4a199d4cdea2af50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f0746c17ba976a2721b5fd02e620e9c = $(`<div id="html_7f0746c17ba976a2721b5fd02e620e9c" style="width: 100.0%; height: 100.0%;">ANTENNE HABITAT SUD (RENAUDIE)*/AVENUE DU 8 MAI 1945 N°38 - LOCAUX DE RANGEMENTS/VESTIAIRES/LOCAL ATTENANT (LOCAL POUBELLE COPROPRIETE G5)*  Conso Annuelle: 0.0</div>`)[0];
+                popup_69270505bdeb78ac4a199d4cdea2af50.setContent(html_7f0746c17ba976a2721b5fd02e620e9c);
+            
+        
+
+        marker_2c03de19d47a531da33a4fdf360c9a05.bindPopup(popup_69270505bdeb78ac4a199d4cdea2af50)
+        ;
+
+        
+    
+    
+            var marker_e47d0f06feb5595ce56dc566ca145669 = L.marker(
+                [45.182228, 5.765765],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_2494c2974414620afa4b52237be9dbf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98cd1174a8481ee04e32416183160770 = $(`<div id="html_98cd1174a8481ee04e32416183160770" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE SAINT JUST (ECOLE ELEMENTAIRE PAUL LANGEVIN - PROVISOIRE)*/LOGEMENTS SAINT JUST (3 LOCATAIRES)  Conso Annuelle: 0.0</div>`)[0];
+                popup_2494c2974414620afa4b52237be9dbf7.setContent(html_98cd1174a8481ee04e32416183160770);
+            
+        
+
+        marker_e47d0f06feb5595ce56dc566ca145669.bindPopup(popup_2494c2974414620afa4b52237be9dbf7)
+        ;
+
+        
+    
+    
+            var marker_c0e75cbdcdeb1d7d22cccbdfab62c591 = L.marker(
+                [45.172721, 5.781511],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_2b8bed1ff5178e3d74b0f327640a4735 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd52e85fe19e02203af68f1561f68172 = $(`<div id="html_dd52e85fe19e02203af68f1561f68172" style="width: 100.0%; height: 100.0%;">CENTRE DE LOISIRS DU MURIER/CHALET*  Conso Annuelle: 0.0</div>`)[0];
+                popup_2b8bed1ff5178e3d74b0f327640a4735.setContent(html_dd52e85fe19e02203af68f1561f68172);
+            
+        
+
+        marker_c0e75cbdcdeb1d7d22cccbdfab62c591.bindPopup(popup_2b8bed1ff5178e3d74b0f327640a4735)
+        ;
+
+        
+    
+    
+            var marker_25007bb57e0f519d4b30481d3113b644 = L.marker(
+                [45.1861, 5.746695],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_9d86af52ad6c064a99c06f76a22df301 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dcf120f42b5736b417eb6e58b8927219 = $(`<div id="html_dcf120f42b5736b417eb6e58b8927219" style="width: 100.0%; height: 100.0%;">LOCAUX CROIX ROUGE (EX CREDIT AGRICOLE)  Conso Annuelle: 0.0</div>`)[0];
+                popup_9d86af52ad6c064a99c06f76a22df301.setContent(html_dcf120f42b5736b417eb6e58b8927219);
+            
+        
+
+        marker_25007bb57e0f519d4b30481d3113b644.bindPopup(popup_9d86af52ad6c064a99c06f76a22df301)
+        ;
+
+        
+    
+    
+            var marker_da4919f8e497445a15274874ba8b0b8a = L.marker(
+                [45.171152, 5.782044],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_12eca659bea09c79d0f1d0f3893d005a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a36f4aade81d9f8f20322f332874915a = $(`<div id="html_a36f4aade81d9f8f20322f332874915a" style="width: 100.0%; height: 100.0%;">CENTRE DE NATURE GUY MOQUET/DORTOIRS*  Conso Annuelle: 0.0</div>`)[0];
+                popup_12eca659bea09c79d0f1d0f3893d005a.setContent(html_a36f4aade81d9f8f20322f332874915a);
+            
+        
+
+        marker_da4919f8e497445a15274874ba8b0b8a.bindPopup(popup_12eca659bea09c79d0f1d0f3893d005a)
+        ;
+
+        
+    
+    
+            var marker_31cb6ff6e203cf490f416efdb1e78784 = L.marker(
+                [45.171771, 5.767959],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_52f68036b4ea527b99931caf039fc919 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_262f0ccdb002c6af4d17cd197713bb4a = $(`<div id="html_262f0ccdb002c6af4d17cd197713bb4a" style="width: 100.0%; height: 100.0%;">CIMETIERE DES ALLOVES/LOCAUX GARDIEN*  Conso Annuelle: 0.0</div>`)[0];
+                popup_52f68036b4ea527b99931caf039fc919.setContent(html_262f0ccdb002c6af4d17cd197713bb4a);
+            
+        
+
+        marker_31cb6ff6e203cf490f416efdb1e78784.bindPopup(popup_52f68036b4ea527b99931caf039fc919)
+        ;
+
+        
+    
+    
+            var marker_3882c1c7f416c53665b80cce40a49a85 = L.marker(
+                [45.162767, 5.769286],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_e0bc6fa30850370b7c2ad8424bfab7b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3f413635260b75175196d3cd42f058e = $(`<div id="html_b3f413635260b75175196d3cd42f058e" style="width: 100.0%; height: 100.0%;">CIMETIERE SAINT PIERRE/SUPPRESSEUR*  Conso Annuelle: 0.0</div>`)[0];
+                popup_e0bc6fa30850370b7c2ad8424bfab7b3.setContent(html_b3f413635260b75175196d3cd42f058e);
+            
+        
+
+        marker_3882c1c7f416c53665b80cce40a49a85.bindPopup(popup_e0bc6fa30850370b7c2ad8424bfab7b3)
+        ;
+
+        
+    
+    
+            var marker_db2588401fd99725cbf35943ffacb7f8 = L.marker(
+                [45.170118, 5.75609],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_3d58906ea6fcc32139b41f6e2a43d72d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75302f8d4663b18132dc9144fa42cd28 = $(`<div id="html_75302f8d4663b18132dc9144fa42cd28" style="width: 100.0%; height: 100.0%;">ANTENNE HABITAT SUD (RENAUDIE)*/AVENUE DU 8 MAI 1945 N°38 - LOCAUX DE RANGEMENTS/VESTIAIRES  Conso Annuelle: 0.0</div>`)[0];
+                popup_3d58906ea6fcc32139b41f6e2a43d72d.setContent(html_75302f8d4663b18132dc9144fa42cd28);
+            
+        
+
+        marker_db2588401fd99725cbf35943ffacb7f8.bindPopup(popup_3d58906ea6fcc32139b41f6e2a43d72d)
+        ;
+
+        
+    
+    
+            var marker_ac9095ad7958103bddf183d9fe6800e4 = L.marker(
+                [45.171119, 5.756636],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_7b00d39fc064c5dd962672ebaf2cbf17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b70944c3efe496652983d0511ac145d = $(`<div id="html_5b70944c3efe496652983d0511ac145d" style="width: 100.0%; height: 100.0%;">BATIMENT B31 - AVENUE DU 8 MAI 1945 N°16/ RDC*/OFFICE MUNICIPAL DU SPORT (OMS)  Conso Annuelle: 0.0</div>`)[0];
+                popup_7b00d39fc064c5dd962672ebaf2cbf17.setContent(html_5b70944c3efe496652983d0511ac145d);
+            
+        
+
+        marker_ac9095ad7958103bddf183d9fe6800e4.bindPopup(popup_7b00d39fc064c5dd962672ebaf2cbf17)
+        ;
+
+        
+    
+    
+            var marker_59913802acb365765e70569befbddde9 = L.marker(
+                [45.171352, 5.757452],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_8af9065c9095f5f8a9e7103a0d013775 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48d5cc00042756788d8024d2f9993f81 = $(`<div id="html_48d5cc00042756788d8024d2f9993f81" style="width: 100.0%; height: 100.0%;">LOCAUX AVENUE DU 8 MAI 1945 N°03 (EX LA POSTE)*/ RDC - LOCAUX DE STOCKAGE (ANCIEN CENTRE DE TRI)  Conso Annuelle: 0.0</div>`)[0];
+                popup_8af9065c9095f5f8a9e7103a0d013775.setContent(html_48d5cc00042756788d8024d2f9993f81);
+            
+        
+
+        marker_59913802acb365765e70569befbddde9.bindPopup(popup_8af9065c9095f5f8a9e7103a0d013775)
+        ;
+
+        
+    
+    
+            var marker_38ae95f659beac6f339101374f018458 = L.marker(
+                [45.175563, 5.758325],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_874e94d6c58e90f6662bc3803e30b355 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_142ebcb617e4bd6a8431b937941d933a = $(`<div id="html_142ebcb617e4bd6a8431b937941d933a" style="width: 100.0%; height: 100.0%;">LOCAUX TECHNIQUES - LE KIOSQUE PARC JO BLANCHON/BLOCS TECHNIQUES ELECTRIQUES*  Conso Annuelle: 0.0</div>`)[0];
+                popup_874e94d6c58e90f6662bc3803e30b355.setContent(html_142ebcb617e4bd6a8431b937941d933a);
+            
+        
+
+        marker_38ae95f659beac6f339101374f018458.bindPopup(popup_874e94d6c58e90f6662bc3803e30b355)
+        ;
+
+        
+    
+    
+            var marker_3c934c0efa3a76b6c5492e287523c2e2 = L.marker(
+                [45.179219, 5.753348],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_5bbfa0d423322c893083d9c2c3c9ec92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ad7001bfca2ddb8486d82ffbac70df0 = $(`<div id="html_3ad7001bfca2ddb8486d82ffbac70df0" style="width: 100.0%; height: 100.0%;">LOCAUX RUE PAUL LANGEVIN N°13 (EX CHAMOND) - ECLAIRAGE PUBLIC  Conso Annuelle: 0.0</div>`)[0];
+                popup_5bbfa0d423322c893083d9c2c3c9ec92.setContent(html_3ad7001bfca2ddb8486d82ffbac70df0);
+            
+        
+
+        marker_3c934c0efa3a76b6c5492e287523c2e2.bindPopup(popup_5bbfa0d423322c893083d9c2c3c9ec92)
+        ;
+
+        
+    
+    
+            var marker_ec7658c9bb9fc29538a92fc1f6570854 = L.marker(
+                [45.173015, 5.755115],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_2d68e93c9dea27d472a794d9a8d9e6a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7a1d0f0f5f7fc009c98c8523b5aa4a1 = $(`<div id="html_b7a1d0f0f5f7fc009c98c8523b5aa4a1" style="width: 100.0%; height: 100.0%;">LOCAUX RUE EDMOND ROSTAND N°21/23 (EX MOSQUEE) - STOCKAGE  Conso Annuelle: 0.0</div>`)[0];
+                popup_2d68e93c9dea27d472a794d9a8d9e6a1.setContent(html_b7a1d0f0f5f7fc009c98c8523b5aa4a1);
+            
+        
+
+        marker_ec7658c9bb9fc29538a92fc1f6570854.bindPopup(popup_2d68e93c9dea27d472a794d9a8d9e6a1)
+        ;
+
+        
+    
+    
+            var marker_ebf486520f862ba44cc2cb5acef08700 = L.marker(
+                [45.17799, 5.776572],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_471e75f85a3deb7af32b993b70a3f362 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d17e7c1865a7c4792399b7e36c45a88d = $(`<div id="html_d17e7c1865a7c4792399b7e36c45a88d" style="width: 100.0%; height: 100.0%;">ATELIERS MUNICIPAUX/BATIMENT B*  Conso Annuelle: 0.0</div>`)[0];
+                popup_471e75f85a3deb7af32b993b70a3f362.setContent(html_d17e7c1865a7c4792399b7e36c45a88d);
+            
+        
+
+        marker_ebf486520f862ba44cc2cb5acef08700.bindPopup(popup_471e75f85a3deb7af32b993b70a3f362)
+        ;
+
+        
+    
+    
+            var marker_df97394c7e8f3f37028911790c86f97e = L.marker(
+                [45.183352, 5.752516],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_964554bdbd732b8fc13fed3603424515 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0dea3ed2d74b96f6379c1981b2397f9 = $(`<div id="html_a0dea3ed2d74b96f6379c1981b2397f9" style="width: 100.0%; height: 100.0%;">CUISINE CENTRALE/BATIMENT PRINCIPAL*  Conso Annuelle: 0.0</div>`)[0];
+                popup_964554bdbd732b8fc13fed3603424515.setContent(html_a0dea3ed2d74b96f6379c1981b2397f9);
+            
+        
+
+        marker_df97394c7e8f3f37028911790c86f97e.bindPopup(popup_964554bdbd732b8fc13fed3603424515)
+        ;
+
+        
+    
+    
+            var marker_c6999ff9c3b0f725c71a87b7647b735f = L.marker(
+                [45.188488, 5.754876],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_97b54dac13eb747ab9f93a3161297e85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02a723b477e797b1b62e05f428f2670f = $(`<div id="html_02a723b477e797b1b62e05f428f2670f" style="width: 100.0%; height: 100.0%;">BOULISTES - BIDAL PERI*/TERRAIN DE BOULES EXTERIEUR*  Conso Annuelle: 0.0</div>`)[0];
+                popup_97b54dac13eb747ab9f93a3161297e85.setContent(html_02a723b477e797b1b62e05f428f2670f);
+            
+        
+
+        marker_c6999ff9c3b0f725c71a87b7647b735f.bindPopup(popup_97b54dac13eb747ab9f93a3161297e85)
+        ;
+
+        
+    
+    
+            var marker_3f5bcc3f6ea6d1e8a73c0fa4565bcfc1 = L.marker(
+                [45.165334, 5.747342],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_09ba1739658893124c38ffc605a79fa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acc32d1ee0a0c4bde26cba19504a0e6c = $(`<div id="html_acc32d1ee0a0c4bde26cba19504a0e6c" style="width: 100.0%; height: 100.0%;">GROUPE SCOLAIRE PAUL ELUARD*/ECOLE ELEMENTAIRE PAUL ELUARD/LOGEMENTS PAUL ELUARD (2 LOCATAIRES)*  Conso Annuelle: 0.0</div>`)[0];
+                popup_09ba1739658893124c38ffc605a79fa7.setContent(html_acc32d1ee0a0c4bde26cba19504a0e6c);
+            
+        
+
+        marker_3f5bcc3f6ea6d1e8a73c0fa4565bcfc1.bindPopup(popup_09ba1739658893124c38ffc605a79fa7)
+        ;
+
+        
+    
+    
+            var marker_5a623f946b853d3c6f9c2be6959fb747 = L.marker(
+                [45.189853, 5.764102],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_2d9edf1af4d68e5923cb9c8e569f5eae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4e123632213abde9f4c4123572109bb = $(`<div id="html_a4e123632213abde9f4c4123572109bb" style="width: 100.0%; height: 100.0%;">LOCAUX RUE RAOUL BLANCHARD N°08*/LOCAL DE STOCKAGE - ECLAIRAGE PUBLIC  Conso Annuelle: 0.0</div>`)[0];
+                popup_2d9edf1af4d68e5923cb9c8e569f5eae.setContent(html_a4e123632213abde9f4c4123572109bb);
+            
+        
+
+        marker_5a623f946b853d3c6f9c2be6959fb747.bindPopup(popup_2d9edf1af4d68e5923cb9c8e569f5eae)
+        ;
+
+        
+    
+    
+            var marker_5780909edff08e7d5944fd81402c0964 = L.marker(
+                [45.189753, 5.764064],
+                {}
+            ).addTo(map_f5a38c39c98c9c51577616f11ed6367d);
+        
+    
+        var popup_5157743764df92be400a9bdd88586c19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec474153794762c8455e1faa6fc7118e = $(`<div id="html_ec474153794762c8455e1faa6fc7118e" style="width: 100.0%; height: 100.0%;">LOCAUX RUE RAOUL BLANCHARD N°08*/LOCAL DE STOCKAGE - SKI (SERVICE DES SPORTS)  Conso Annuelle: 0.0</div>`)[0];
+                popup_5157743764df92be400a9bdd88586c19.setContent(html_ec474153794762c8455e1faa6fc7118e);
+            
+        
+
+        marker_5780909edff08e7d5944fd81402c0964.bindPopup(popup_5157743764df92be400a9bdd88586c19)
+        ;
+
+        
+    
+</script>
+</html>
