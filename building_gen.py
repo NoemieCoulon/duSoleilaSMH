@@ -16,9 +16,9 @@ with open('batiments.csv', newline='') as csvfile:
         # Example Usage
         if faisabilite_prod == 'eleve':
             roof_surface = int(row['surface_toit'])
-            building = build.ProdBuilding(name, coordinates, conso_annuelle)
+            building = build.ProdBuilding(pdl,name, coordinates, conso_annuelle)
             building.__set_surface__(roof_surface)
         else:
-            building = build.Building(name, coordinates, conso_annuelle, faisabilite_prod)
+            building = build.Building(pdl,name, coordinates, conso_annuelle, faisabilite_prod)
 
-        dict_buildings[name] = building
+        dict_buildings[pdl] = building

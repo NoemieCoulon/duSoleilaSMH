@@ -3,7 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class Building:
-    def __init__(self, name, coordinates, year_consumption, prod_possible):
+    def __init__(self, pdl, name, coordinates, year_consumption, prod_possible):
+        self.pdl = pdl
         self.name = name
         self.coordinates = coordinates
         self.year_consumption = year_consumption
@@ -34,8 +35,8 @@ class Building:
 
 class ProdBuilding(Building):
 
-    def __init__(self, name, coordinates, year_consumption):
-        super().__init__(name, coordinates, year_consumption, True)
+    def __init__(self, pdl, name, coordinates, year_consumption):
+        super().__init__(pdl, name, coordinates, year_consumption, True)
 
     def __set_surface__(self, roof_m2):
         self.roof_m2 = roof_m2
