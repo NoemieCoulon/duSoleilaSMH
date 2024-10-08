@@ -8,7 +8,8 @@ with open('roofs.csv', newline='') as csvfile:
         name = row['nom']
         pdl = row['pdl']
         roof_m2 = row['roof_m2']
+        potential = row['potential']
         
-        roof = r.Roof(name, pdl, roof_m2)
+        roof = r.Roof(name, pdl, roof_m2, potential)
         
-        dict_roofs[pdl] = roof
+        dict_roofs[name] = roof
