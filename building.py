@@ -1,6 +1,7 @@
 # coding: utf-8
 import numpy as np
 import matplotlib.pyplot as plt
+import irridiation as irr
 
 class Building:
     def __init__(self, pdl, name, coordinates, year_consumption, prod_possible):
@@ -35,14 +36,21 @@ class Building:
 
 class ProdBuilding(Building):
 
-    def __init__(self, pdl, name, coordinates, year_consumption):
+    def __init__(self, pdl, name, coordinates, year_consumption, roof_m2):
         super().__init__(pdl, name, coordinates, year_consumption, True)
-
-    def __set_surface__(self, roof_m2):
         self.roof_m2 = roof_m2
 
+    def __set_pv_surface__(self, pv_m2):
+        self.pv_m2 = pv_m2
+
     def production(self):
-        return [10]*7
+        # Retrieve the irradiation data (assuming it's a list of values for each day)
+        irradiation = irr.irridiation_year("2023")["07"]
+        
+        # Multiply each value in the irradiation list by self.pv_m2 and store in the production list
+        production = [float(value) * float(self.pv_m2)/1000 for value in irradiation]
+        
+        return production
     
     def show_production(self):
         # Get consumption data

@@ -14,8 +14,6 @@ dict_roofs = roof.dict_roofs
 # Create two feature groups for the layers
 group_pdl = folium.FeatureGroup(name="Compteurs").add_to(c)  # Layer for buildings
 
-roof_icon = folium.CustomIcon('image/roof.png', icon_size=(30, 30))          # Replace with your roof logo
-
 # Create separate FeatureGroups for roof potential
 group_high_potential = folium.FeatureGroup(name="Potentiel élevé").add_to(c)
 group_medium_potential = folium.FeatureGroup(name="Potentiel moyen").add_to(c)
