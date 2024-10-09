@@ -1,0 +1,13 @@
+.~lock.bat2.csv#
+.~lock.batiments.csv#
+.~lock.roofs.csv#
+__pycache__/building.cpython-310.pyc
+__pycache__/building_gen.cpython-310.pyc
+__pycache__/consumption.cpython-310.pyc
+__pycache__/irridiation.cpython-310.pyc
+__pycache__/roof.cpython-310.pyc
+__pycache__/roof_gen.cpython-310.pyc
+cosumption.py
+image/
+roofs.ods
+sun_year.png
