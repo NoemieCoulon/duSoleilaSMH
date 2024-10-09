@@ -5,7 +5,7 @@ from collections import defaultdict
 from datetime import datetime
 
 # Update the file path to your CSV file
-file_path = "/home/coulonn/Documents/Piste/duSoleilaSMH/consumption/Maison communale 07_2023.csv"  # Change this to the correct path
+file_path = "/home/coulonn/Documents/Piste/duSoleilaSMH/consumption/Maison_communale 07_2023.csv"  # Change this to the correct path
 
 # Initialize a dictionary to store consumption data
 consumption_per_hour = defaultdict(lambda: defaultdict(lambda: {'Heures Creuses': 0, 'Heures Pleines': 0}))

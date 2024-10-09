@@ -15,3 +15,11 @@ analyse consultation evolution filtres: facture energie finale fact et (energie 
 Reporting Requeteur 
 
 Un PDL = potetiellement plusieurs toits
+
+### name 
+
+inclinaison files:
+
+{name_building}_{orientation}_{inclinaison}
+orientation = 0 for South and 180 for North
+example: for Maison Communale orientated north with 0° inclinaison "MC_180_0.csv"

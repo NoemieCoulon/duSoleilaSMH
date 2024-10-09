@@ -42,5 +42,4 @@ def irridiation_year(year):
             (irradiation / count) if count > 0 else 0
             for irradiation, count in zip(irradiation_per_month[month_key], count_per_month[month_key])
         ]
-    print("irraditaion july: ", average_irradiation_per_month['07'])
     return average_irradiation_per_month
