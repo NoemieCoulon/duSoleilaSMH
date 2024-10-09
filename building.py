@@ -14,8 +14,8 @@ class Building:
         self.prod_possible = prod_possible
 
     def conso(self):
-        start_date = datetime(2023,6, 1)
-        end_date = datetime(2023,7, 15)
+        start_date = datetime(2023,1, 1)
+        end_date = datetime(2023,1, 15)
         directory_csv = "/home/coulonn/Documents/Piste/duSoleilaSMH/consumption/csv/"+self.pdl+"/"
         consumption = cons.consumption_per_month(directory_csv, start_date, end_date)
         print(self.name, directory_csv)
