@@ -1,7 +1,7 @@
 "38421SI_384412_EL0100 - LHEURE BLEUE - Courbe de charge - Energie active
  Du 01/07/2023 au 31/07/2023",,,,,
 ,,,,,
-Date de D�but,Date de Fin,Heures Creuses Et� Distributeur<br><br>(kW),Heures Pleines Et� Distributeur<br><br>(kW),,
+Date de Debut,Date de Fin,Heures Creuses Ete Distributeur<br><br>(kW),Heures Pleines Ete Distributeur<br><br>(kW),,
 01-07-23 00:00,01-07-23 00:05,2,,,
 01-07-23 00:05,01-07-23 00:10,2,,,
 01-07-23 00:10,01-07-23 00:15,2,,,
