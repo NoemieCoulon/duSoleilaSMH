@@ -14,7 +14,7 @@ with open('batiments.csv', newline='') as csvfile:
         faisabilite_prod = row['faisabilite_prod']
 
         # Example Usage
-        if faisabilite_prod == 'eleve':
+        if faisabilite_prod:
             roof_surface = int(row['surface_toit'])
             building = build.ProdBuilding(pdl,name, coordinates, conso_annuelle,roof_surface)
         else:
