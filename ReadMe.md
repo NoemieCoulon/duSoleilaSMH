@@ -23,3 +23,13 @@ inclinaison files:
 {name_building}_{orientation}_{inclinaison}
 orientation = 0 for South and 180 for North
 example: for Maison Communale orientated north with 0° inclinaison "MC_180_0.csv"
+
+
+### problèmes
+
+pas de 30 juin 2023?
+
+### next step
+- calcul prix, facture etc par mois
+- créer cercle de auto conso avec prod + conso
+- faire des moyennes sur les mois, les jours etc, pouvoir choisir

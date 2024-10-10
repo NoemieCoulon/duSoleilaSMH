@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import irridiation as irr
 import consumption as cons
-from datetime import datetime
+from datetime import datetime, timedelta, date
 
 class Building:
     def __init__(self, pdl, name, coordinates, year_consumption, prod_possible):
@@ -13,13 +13,28 @@ class Building:
         self.year_consumption = year_consumption
         self.prod_possible = prod_possible
 
-    def conso(self):
-        start_date = datetime(2023,1, 1)
-        end_date = datetime(2023,1, 15)
+    def conso(self, start_date, end_date):
         directory_csv = "/home/coulonn/Documents/Piste/duSoleilaSMH/consumption/csv/"+self.pdl+"/"
         consumption = cons.consumption_per_month(directory_csv, start_date, end_date)
-        print(self.name, directory_csv)
-        return consumption
+        
+        total_conso_list = []
+        timestamps_list = []
+
+        # Loop through the consumption_mc dictionary to extract data
+        for day, day_data in consumption.items():
+            # Ensure day is treated as a datetime object
+            if isinstance(day, str):
+                day = datetime.strptime(day, '%Y-%m-%d')  # Adjust format if necessary
+            elif isinstance(day, date):  # This check will now work correctly
+                day = datetime.combine(day, datetime.min.time())  # Convert date to datetime
+
+            # For each day, generate 24 hourly timestamps and append 'Total Conso' values
+            for hour in range(24):  # Assuming each day has 24 hourly consumption values
+                timestamps_list.append(day + timedelta(hours=hour))  # Append datetime for each hour
+                total_conso_list.append(day_data[hour]['Total Conso'])  # Append corresponding 'Total Conso' value
+
+
+        return timestamps_list, total_conso_list
 
     def show_consumption(self):
         # Get consumption data
@@ -50,14 +65,28 @@ class ProdBuilding(Building):
     def __set_pv_surface__(self, pv_m2):
         self.pv_m2 = pv_m2
 
-    def production(self):
-        # Retrieve the irradiation data (assuming it's a list of values for each day)
-        irradiation = irr.irridiation_year("2023")["07"]
-        
-        # Multiply each value in the irradiation list by self.pv_m2 and store in the production list
-        production = [float(value) *0.2* float(self.pv_m2)/1000 for value in irradiation]
-        
-        return production
+    def irridiation(self, start_date, end_date):
+        directory_csv = "/home/coulonn/Documents/Piste/duSoleilaSMH/irridiation/MC_0_0.csv"
+        irridiation = irr.irridiation(directory_csv, start_date, end_date)
+        return irridiation
+    
+    def production(self, start_date, end_date):
+        irridiation = self.irridiation(start_date, end_date)
+        # Prepare to extract 'Total Irridiation' values and corresponding timestamps for solar production
+        solar_power_list = []
+        timestamps_list_solar = []
+
+        # Loop through the production_mc dictionary to extract solar production data
+        for timestamp, data in irridiation.items():
+            if isinstance(timestamp, str):
+                timestamp = datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S')  # Adjust format if necessary
+            elif isinstance(timestamp, datetime):  # This check will now work correctly
+                pass  # Timestamp is already a datetime object
+            
+            timestamps_list_solar.append(timestamp)  # Append timestamp
+            solar_power_list.append(data['Total Irridiation'] *0.2* float(self.pv_m2)/1000)  # Append corresponding 'Total Irridiation' value and 0.2 is for the pv yield
+
+        return timestamps_list_solar, solar_power_list
     
     def show_production(self):
         # Get consumption data

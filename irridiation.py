@@ -1,45 +1,76 @@
 import csv
-import matplotlib.pyplot as plt
-import numpy as np
-from calendar import monthrange
+from datetime import datetime
+from collections import defaultdict
 
+# File path to the CSV
 file_path = "/home/coulonn/Documents/Piste/duSoleilaSMH/irridiation/MC_0_0.csv"
 
-# Initialize a dictionary to store data for each hour and each month
-irradiation_per_month = {f"{month:02d}": [0] * 24 for month in range(1, 13)}
-count_per_month = {f"{month:02d}": [0] * 24 for month in range(1, 13)}
-
-def irridiation_year(year):
-    # Open and read the CSV file using the csv library
-    with open(file_path, 'r') as file:
-        reader = csv.reader(file)
+# Function to load and filter irradiation data by date range
+# Function to load and filter irradiation data by date range
+def irridiation(file_path, start_date, end_date):
+    # Initialize a dictionary to store irradiation data per date and hour
+    dictIrridiation = defaultdict(lambda: defaultdict(lambda: {'Total Irridiation': 0}))
+    
+    # Open the CSV file
+    with open(file_path, 'r', encoding='utf-8', newline='') as file:
+        # Skip the first 8 lines of metadata
+        for _ in range(8):
+            next(file)
         
-        # Skip the metadata lines
-        for _ in range(9):
-            next(reader)
-
-        # Check if month filtering works properly
+        # Read the headers (ensuring proper formatting)
+        headers = next(file).strip().replace("\t", "").replace("\r", "").split(",")
+        
+        # Initialize the CSV reader
+        reader = csv.DictReader(file, fieldnames=headers)
+        
+        # Process each row in the CSV
         for row in reader:
-            if len(row) == 8:
-                current_date = row[0]
-                current_month = current_date[4:6]  # Extract month from the date (YYYYMMDD)
-                if current_date[:4] == year:  # Ensure the year matches
-                    hour = int(current_date[9:11])  # Extract the hour (HH)
+            try:
+                # Extract the timestamp from the first column
+                date_str = row[headers[0]]
+                
+                # Convert the date string to a datetime object
+                date_time = datetime.strptime(date_str, "%Y%m%d:%H%M")
+                
+                # Only consider the rows within the specified date range
+                if start_date <= date_time < end_date:
+                    # Check and log raw values before conversion
+                    gb_raw = row[headers[1]]
+                    gd_raw = row[headers[2]]
+                    gr_raw = row[headers[3]]
 
-                    # Try parsing and summing irradiation values
-                    gb = float(row[1])
-                    gd = float(row[2])
-                    gr = float(row[3])
+                    # Check if the values are empty or not valid numbers, convert or default to 0
+                    try:
+                        gb = float(gb_raw) if gb_raw else 0
+                        gd = float(gd_raw) if gd_raw else 0
+                        gr = float(gr_raw) if gr_raw else 0
+                    except ValueError:
+                        print(f"Invalid value encountered in row: {row}")
+                        gb, gd, gr = 0, 0, 0  # Default to zero if conversion fails
                     
-                    total_irradiation = gb + gd + gr
-                    irradiation_per_month[current_month][hour] += total_irradiation
-                    count_per_month[current_month][hour] += 1  # Count occurrences for averaging
+                    # Store the total irradiation
+                    total_irr = gb + gd + gr
+                    dictIrridiation[date_time]['Total Irridiation'] = total_irr
 
-    # Calculate average irradiation per hour for each month
-    average_irradiation_per_month = {}
-    for month_key in irradiation_per_month:
-        average_irradiation_per_month[month_key] = [
-            (irradiation / count) if count > 0 else 0
-            for irradiation, count in zip(irradiation_per_month[month_key], count_per_month[month_key])
-        ]
-    return average_irradiation_per_month
+            except ValueError as ve:
+                # Catch any issues in date or float parsing and print an error message
+                # print(f"Skipping row due to error: {ve}")
+                continue
+            except KeyError as ke:
+                # Handle missing or incorrect column headers
+                print(f"KeyError: {ke}")
+            except Exception as e:
+                # Generic exception handling for unexpected issues
+                # print(f"Skipping row due to an unexpected error: {e}")
+                continue
+    return dictIrridiation
+
+# # Function call with start and end date
+# start_date = datetime(2023, 1, 1)
+# end_date = datetime(2023, 1, 2)
+# dictIrr = irridiation(file_path, start_date, end_date)
+
+# # Retrieve the list of all irradiation values
+# list_irr = [v['Total Irridiation'] for k, v in dictIrr.items()]
+
+# # Print the list of irradiation values
